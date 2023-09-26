@@ -1,0 +1,188 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url('https://media.discordapp.net/attachments/895511469129605130/1150312023754813440/ACS_JAYA.png?width=1440&height=568');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.login-form h2 {
+  margin: 0 0 20px;
+}
+
+input[type="text"],
+input[type="password"],
+button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: rgba(0, 0, 139, 0.7); 
+  color: white;
+  cursor: pointer;
+  border: none;
+  font-size: 20px;
+  padding: 15px 30px;
+  margin: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 20px;
+}
+
+.circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-info p {
+  margin: 0;
+}
+
+#error-message {
+  color: red;
+}
+
+.main-page {
+  display: none;
+}
+
+
+.buttons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.neon-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+}
+
+.status {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    text-align: right;
+}
+
+#user-status {
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 5px 10px;
+    border-radius: 20%;
+    position: relative;
+    display: inline-block;
+}
+
+@keyframes neon-glow {
+    0%, 100% {
+        box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
+    }
+    50% {
+        box-shadow: none;
+    }
+}
+
+#server-status {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+#user-status::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    bottom: -5px;
+    left: -5px;
+    border-radius: 20%;
+    box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
+    animation: neon-glow 1s ease-in-out infinite alternate;
+    animation-delay: 1s;
+}
+
+
+.neon-button {
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 20px;
+    padding: 15px 30px;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.neon-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px white;
+}
+.content {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  margin: 5px;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
