@@ -28,10 +28,3 @@ function setServerStatus(online) {
     serverStatus.textContent = `FORGETEST Server: ${online ? 'Online' : 'Offline'}`;
     serverStatus.style.color = online ? 'green' : 'red';
 }
-document.addEventListener('contextmenu', event => event.preventDefault());
-javascript
-document.addEventListener('keydown', event => {
- if (event.key === 'F12' || event.key === 'F11' || event.key === 'Control' && event.code === 'KeyI') {
-    event.preventDefault();
- }
-});
